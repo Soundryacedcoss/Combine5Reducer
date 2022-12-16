@@ -8,8 +8,9 @@ export const LandingPage = () => {
   return (
     <div>
         First Number : {output.add.num1}<br />
-        Second Number:{output.add.num2}
+        Second Number:{output.add.num2}<br />
         <div>
+        <br />
         Sum is:{output.add.res}<br />
         <button onClick={()=>dispatch(add())}>Add</button>
         </div>
@@ -26,7 +27,8 @@ export const LandingPage = () => {
         <button onClick={()=>dispatch(divide())}>Divide</button>
        </div>
        <div>
-         clear:{output.clear.res}<br />
+         First Number:{output.clear.num1}<br />
+         Second Number: {output.clear.num2}<br />
         <button onClick={()=>dispatch(clear())}>Clear</button>
        </div>
     </div>

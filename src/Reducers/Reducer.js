@@ -55,7 +55,8 @@ const clearreducer=(state=initial_state,action)=>{
         case CLEAR:
             return{
                 ...state,
-                res:0
+                num1:state.num1=0,
+                num2:state.num2=0,
             }
             default:return state;
     }
